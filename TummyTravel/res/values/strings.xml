@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tummy Travel</string>
+    <string name="app_name1">Tummy Travel - View Store</string>
+    <string name="app_name2">Tummy Travel - Add Store</string>
+    <string-array name="rating_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="add_app_name">Add Restaurant</string>
+    <string name="type">Shop Type</string>
+    <string name="selectedTemp">You selected \'%s\'.</string>
+</resources>

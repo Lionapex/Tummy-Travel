@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+	<RelativeLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	    <ImageView android:id="@+id/restBanner" 
+	     	android:src="@drawable/notavailable"    	
+	     	android:layout_alignParentLeft="true" 
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_marginTop ="20dp"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="100dp"
+	    	android:maxHeight="100dp"
+	    	android:cropToPadding="true"
+	    	android:scaleType="fitXY"
+	    	android:adjustViewBounds="true"
+	    	android:padding="1dp"></ImageView>
+	    
+	    <ImageView android:id="@+id/restFlag"
+	     	android:layout_toRightOf="@+id/restBanner" 
+		    android:layout_marginTop ="20dp"
+		    android:layout_marginLeft="5dp" 
+		    android:src="@drawable/unknownflag" 
+		    android:layout_height="30dp" 
+		    android:layout_width="35dp"
+		    android:cropToPadding="true"
+		    android:scaleType="fitXY"
+		    android:adjustViewBounds="true"
+		    android:padding="0dp"></ImageView>
+	 	
+	    <TextView 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/restName" 
+	    	android:layout_below="@+id/restBanner" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="Name" 
+	    	android:layout_alignLeft="@+id/restBanner"
+	    	android:textStyle="bold"
+	    	android:textSize="20sp"
+	    	android:layout_marginTop="5dp"
+	    	android:typeface="sans"></TextView>
+	    	
+	    <TextView android:id="@+id/restDesc" 
+	    	android:layout_below="@+id/restName"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content"
+	    	android:layout_marginLeft="25dp"
+	    	android:textSize="15sp" 
+	    	android:text="(No description)" 
+			android:maxWidth="270dp"
+			android:typeface="sans">
+	    </TextView>
+	    <TextView 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/textView1" 
+	    	android:layout_below="@+id/restDesc" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="Type:" 
+	    	android:layout_alignLeft="@+id/restBanner"
+	    	android:maxWidth="270dp"
+	    	android:textSize="15sp" 
+	    	android:textStyle="bold"
+			android:typeface="sans"
+			android:layout_marginTop="5dp">
+	    </TextView>
+	    <TextView android:layout_height="wrap_content" 
+		    android:id="@+id/textView2" 
+		    android:layout_below="@+id/textView1" 
+		    android:layout_width="wrap_content" 
+		    android:text="Budget:" 
+		    android:layout_alignLeft="@+id/textView1"
+	    	android:textSize="15sp" 
+	    	android:textStyle="bold"
+			android:layout_marginTop="5dp">
+		</TextView>
+		  
+	    <TextView android:id="@+id/textView4" 
+	    	android:layout_below="@+id/textView2" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="My rating: " 
+	    	android:layout_alignLeft="@+id/textView2" 
+	    	android:textSize="15sp" 
+	    	android:textStyle="bold"
+			android:layout_marginTop="5dp">
+	    </TextView>
+	    <!--
+	    <Spinner android:id="@+id/spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView2" 
+	        android:layout_toRightOf="@+id/textView4"
+	        android:entries="@array/rating_arrays"/>
+	         -->
+	    <RatingBar android:layout_height="wrap_content" 
+	    	android:layout_below="@+id/textView4" 
+	    	android:layout_width="wrap_content" 
+	    	android:id="@+id/resRating" 
+	    	android:layout_alignTop="@+id/textView4"
+	    	android:numStars="5"
+	    	android:rating="0"
+	    	android:stepSize="1"
+
+	    	android:layout_centerInParent="true"
+	    	android:layout_marginTop="25dp"
+	    	android:layout_marginBottom="10dp">
+	    </RatingBar>
+	   
+	    <TextView android:layout_height="wrap_content" 
+	    	android:id="@+id/restMinBudg" 
+	    	android:layout_toRightOf="@+id/textView2" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="BudgetMin" 
+	    	android:layout_alignTop="@+id/textView2" 
+	    	android:layout_alignBottom="@+id/textView2"
+	    	android:layout_marginLeft="5dp"
+	    	android:textSize="15sp" >
+	    </TextView>
+	    <TextView android:layout_height="wrap_content" 
+	    	android:id="@+id/textView3" 
+	    	android:layout_toRightOf="@+id/restMinBudg" 
+	    	android:layout_width="wrap_content" 
+	    	android:text=" - " 
+	    	android:layout_alignTop="@+id/restMinBudg" 
+	    	android:layout_alignBottom="@+id/restMinBudg"
+	    	android:textSize="15sp" >
+	    </TextView>
+	    <TextView android:layout_height="wrap_content" 
+	    	android:id="@+id/resMaxBudg" 
+	    	android:layout_toRightOf="@+id/textView3" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="BudgetMax" 
+	    	android:layout_alignTop="@+id/textView3" 
+	    	android:layout_alignBottom="@+id/textView3"
+	    	android:textSize="15sp" >
+	    </TextView>
+	    <TextView 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/restType" 
+	    	android:layout_toRightOf="@+id/textView1" 
+	    	android:layout_width="wrap_content" 
+	    	android:text="Type" 
+	    	android:layout_alignTop="@+id/textView1" 
+	    	android:layout_alignBottom="@+id/textView1"
+	    	android:textSize="15sp" 
+	    	android:layout_marginLeft="5dp">
+	    </TextView>
+	    
+	
+	</RelativeLayout>
+</ScrollView>
