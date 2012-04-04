@@ -14,7 +14,8 @@ UPCOMING FEATURES (In Development):
 
 - Add New Shop(In Progress)
 
-How to run the application:
+HOW TO RUN THE APPLICATION:
+
 1. Import both android-mapviewballoons and TummyTravel package into Eclipse or any other program you are using.
 2. Run the TummyTravel App as an Android Application.(Make sure you have copied your own
 google map api key to the main.xml(Getting API key tutorial: http://code.google.com/android/add-ons/google-apis/mapkey.html))
